@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legend of Zelda</title>
+    
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header>
+        <h1>THE LEGEND OF ZELDA</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <main>
+            <section class="hero">
+                <!-- Imagem da Princesa Zelda -->
+                <img src="../midias/zelda.png" alt="Princesa Zelda" class="zelda">
+                
+                <!-- Vídeo sobre Zelda -->
+                <div class="video-container">
+                    <video controls>
+                        <source src="../midias/videozelda (1).mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                </div>
+                
+                <!-- Imagem do Link com espada -->
+                <section class="link">
+                    <img src="../midias/linkkk.png" alt="Link com espada" class="link">
+                </section>
+            </section>
+            
+            <section class="descricao">
+                <h3>
+                    Imagine um mundo vasto, cheio de mistérios, perigos e segredos escondidos. Um lugar onde um jovem herói empunha uma espada lendária para enfrentar forças do mal e salvar uma princesa aprisionada pelo destino. Esse é o universo de The Legend of Zelda, uma das franquias mais icônicas da história dos videogames.
+                </h3>
+                <a href="historia.html" class="learn-more">LEARN MORE</a>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="carousel-container">
+            <button class="prev" onclick="prevCharacter()">&#10094;</button>
+            <div class="carousel">
+                
+                <!-- Personagens do jogo -->
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/midna.png.png" alt="Midna">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>MIDNA</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/zeldinha.png" alt="Zelda">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>ZELDA</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/riju.png" alt="Riju">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>RIJU</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/ganon.png" alt="Ganondorf">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>GANONDORF</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/skullkid.png.png" alt="Skull Kid">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>SKULL KID</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/cavalo.png" alt="Epona">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>EPONA</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/impa.png" alt="Impa">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>IMPA</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/link.png" alt="Link">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>LINK</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../midias/zant.png.png" alt="Zant">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>ZANT</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="nextCharacter()">&#10095;</button>
+        </div>
+    </footer>
+    
+    <!-- Link para o arquivo de script JavaScript -->
+    <script src="../javascript/home.js"></script>
+</body>
+</html>

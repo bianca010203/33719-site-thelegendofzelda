@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #201f1e, #323834, rgb(55, 70, 55));
+    color: #f5d76e;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #002200;
+    padding: 10px;
+    border-bottom: 1.5px solid #f5d76e;
+    position: relative;
+    z-index: 10;
+}
+
+a:hover {
+    color: #f5d76e;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 35px;
+}
+
+nav ul li a {
+    color: #d5cec0;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.jogos-intro {
+    background-color: rgba(0, 34, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.jogos-intro h2 {
+    font-size: 2em;
+    color: #f5d76e;
+}
+
+.jogo-card {
+    background-color: rgba(0, 34, 0, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.jogo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 34, 0, 1);
+}
+
+.jogo-card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.jogo-card:hover img {
+    transform: scale(1.05);
+}
+
+.jogo-card h3 {
+    font-size: 1.5em;
+    color: #f5d76e;
+    margin: 10px 0;
+}
+
+.detalhes {
+    display: none;
+    font-size: 1em;
+    color: #d5cec0;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.detalhes.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Botão de Voltar ao Topo */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #002200;
+    color: #f5d76e;
+    border: 1px solid #f5d76e;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #f5d76e;
+    color: #002200;
+}
+
+/* Efeito Parallax */
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .jogo-card {
+        margin: 10px 0;
+    }
+
+    .jogo-card img {
+        max-width: 100%;
+    }
+}

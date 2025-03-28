@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História - The Legend of Zelda</title>
+    <link rel="stylesheet" href="../css/historia.css"> <!-- Importa o arquivo CSS -->
+</head>
+<body>
+
+    <!-- Cabeçalho com o título e a navegação -->
+    <header>
+        <h1>THE LEGEND OF ZELDA</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Elemento de áudio para tocar música de fundo -->
+    <audio id="meuAudio">
+        <source src="../midias/sacred_grove.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Script para tentar tocar o áudio ao carregar a página -->
+    <script>
+        window.addEventListener('load', function () {
+            let audio = document.getElementById('meuAudio');
+            audio.play().catch(error => console.log("Autoplay bloqueado pelo navegador."));
+        });
+    </script>
+
+    <!-- Introdução sobre a franquia -->
+    <section class="intro">
+        <p>Imagine um mundo vasto, cheio de mistérios, perigos e segredos escondidos. Um lugar onde um jovem herói empunha uma espada lendária para enfrentar forças do mal e salvar uma princesa aprisionada pelo destino. Esse é o universo de <strong>The Legend of Zelda</strong>, uma das franquias mais icônicas da história dos videogames.</p>
+        <div class="linha-amarela"></div> <!-- Linha decorativa -->
+    </section>
+
+    <!-- Seção sobre as três deusas -->
+    <section class="deuses">
+        <div class="deuses-texto">
+            <h2>As Três Deusas</h2>
+            <p>No começo dos tempos, três deusas — Din, Nayru e Farore — criaram o mundo e deixaram a Triforce em Hyrule. Quem a possuir pode realizar qualquer desejo, mas ela só pode ser controlada por alguém de coração equilibrado. Se a pessoa for desequilibrada, a Triforce se divide, e cada parte vai para quem melhor representa seus valores.</p>
+        </div>
+        <div class="deuses-imagens">
+            <img src="../midias/triforce.jpg" alt="Triforce">
+        </div>
+    </section>
+    
+    <div class="linha-amarela"></div>
+    
+    <!-- Seção sobre os povos de Hyrule -->
+    <section class="povos">
+        <h2>Raças/Criaturas de Hyrule</h2>
+        <p>Hyrule é um mundo vasto e cheio de vida, habitado por diferentes povos, cada um com sua cultura e história.</p>
+        
+        <div class="card-container">
+            
+            <!-- Card Zora -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../midias/zora.png" alt="Zora">
+                    </div>
+                    <div class="card-back">
+                        <h3>Zora</h3>
+                        <p>Uma raça aquática elegante e pacífica, os Zoras habitam rios e oceanos, sendo exímios nadadores.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Goron -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../midias/goron.png" alt="Goron">
+                    </div>
+                    <div class="card-back">
+                        <h3>Goron</h3>
+                        <p>Os Gorons são seres fortes e resistentes, vivendo em montanhas e cavernas, especialistas em mineração.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Rito -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../midias/rito.png" alt="Rito">
+                    </div>
+                    <div class="card-back">
+                        <h3>Rito</h3>
+                        <p>Uma raça de seres alados que dominam os céus de Hyrule, conhecidos por sua habilidade de voo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Gerudo -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../midias/gerudo.png" alt="Gerudo">
+                    </div>
+                    <div class="card-back">
+                        <h3>Gerudo</h3>
+                        <p>Mulheres guerreiras do deserto, os Gerudos são conhecidos por sua força e habilidades estratégicas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Korok -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../midias/korok.png" alt="Korok">
+                    </div>
+                    <div class="card-back">
+                        <h3>Korok</h3>
+                        <p>Seres espirituais da floresta, os Koroks são brincalhões e ajudam a natureza a prosperar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Hyliano -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../midias/link.png" alt="Hyliano">
+                    </div>
+                    <div class="card-back">
+                        <h3>Hyliano</h3>
+                        <p>Os Hylianos são os humanos de Hyrule, conhecidos por sua conexão com a Triforce e os Deuses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
