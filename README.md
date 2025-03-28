@@ -1,4 +1,4 @@
-# 🏰 The Legend of Zelda Fan Site 
+# 🏰 The Legend of Zelda Site 
 
 **Desenvolvido por Bianca** ✨
 
@@ -13,7 +13,7 @@ Um site dedicado à incrível franquia *The Legend of Zelda*, criado para pratic
 ## 🛠️ Tecnologias Utilizadas
 | Front-End       | Descrição          |
 |-----------------|--------------------|
-| **HTML5**       | Estrutura do site  |
-| **CSS3**        | Estilização responsiva |
+| **HTML**        | Estrutura do site  |
+| **CSS**         | Estilização responsiva |
 | **JavaScript**  | Interatividade e animações |
 
